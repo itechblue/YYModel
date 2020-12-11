@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YYModel'
-  s.version          = '0.1.0'
+  s.version          = '1.0.4'
   s.summary          = 'A short description of YYModel.'
 
 # This description is used to generate tags and improve search results.
@@ -18,25 +18,23 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  YYModel source
                        DESC
 
-  s.homepage         = 'https://github.com/itechblue@163.com/YYModel'
+  s.homepage         = 'https://github.com/itechblue/YYModel'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'itechblue@163.com' => 'yangchunliu@yixia.com' }
-  s.source           = { :git => 'https://github.com/itechblue@163.com/YYModel.git', :tag => s.version.to_s }
+  s.author           = { 'itechblue' => 'itechblue@163.com' }
+  s.source           = { :git => 'https://github.com/itechblue/YYModel.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
-  s.source_files = 'YYModel/Classes/**/*'
+  s.requires_arc = true
   
-  # s.resource_bundles = {
-  #   'YYModel' => ['YYModel/Assets/*.png']
-  # }
+  #s.source       = { :http => "https://ios-client.ixiaochuan.cn/zuiyou/frameworks/YYModel/1.0.4/zip" }
+  s.source_files = 'YYModel/*'
+  #s.public_header_files = 'YYModel/Headers/*.h'
+  #s.vendored_libraries = 'YYModel/*.a'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'Foundation', 'CoreFoundation'
 end

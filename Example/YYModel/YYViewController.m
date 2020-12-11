@@ -7,7 +7,7 @@
 //
 
 #import "YYViewController.h"
-
+#import "YYModel.h"
 @interface YYViewController ()
 
 @end

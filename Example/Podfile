@@ -4,10 +4,4 @@ platform :ios, '9.0'
 
 target 'YYModel_Example' do
   pod 'YYModel', :path => '../'
-
-  target 'YYModel_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
